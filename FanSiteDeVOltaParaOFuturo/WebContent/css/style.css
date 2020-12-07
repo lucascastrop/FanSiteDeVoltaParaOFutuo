@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap');
+
+@font-face {
+    font-family: DS-Digital, 'Titillium Web', sans-serif;
+    src: url(ds_digital/DS-DIGII.TTF);
+}
+
+
+*{
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body, html{
+    height: 100%;
+    margin: 0;
+    background-color: black;
+}
+h1,h2,h3,p,a{
+    color: whitesmoke;
+}
+
+/******************** INDEX ********************/
+
+.bg .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btf-logo{
+    width: 62.5vw;
+    height: 51vh;
+}
+.animacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+#delorean{
+    width: 77vw;
+    height: 86vh;
+}
+.animacao{
+    position: relative;
+    -webkit-box-reflect: below -12px linear-gradient(transparent, rgba(0,0,0,0.2));
+}
+.animacao .moving{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 2em;
+    text-transform: uppercase;
+    animation: animate 3s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+body .bg{
+    background-image: url("../img/componentes/ceu.png");
+    width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+/* footer{
+    background-image: url("../img/componentes/Silhueta_Cidade.png");
+    width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+footer .silueta-cidade {
+    justify-content: center;
+    align-items: center;
+} */
+
+/******************** BOTOES * INDEX ********************/
+
+#btn-1{
+    border-radius: 12px;
+    width: auto;
+    position: fixed;
+    padding: 0;
+    top: 10px;
+    margin-left: 10px;
+    z-index: 99;
+    text-align: center;
+}
+#btn-1 img{
+    width: 2.5em;
+}
+#btn-2{
+    padding: 0;
+    width: auto;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 99;
+    border-radius: 12px;
+    text-align: center;
+}
+#btn-2 img{
+    width: 2.5em;
+}
+.btn-pten{
+    display: flex;
+    flex-direction: row;
+    width: auto ;
+}
+#btn-3 {
+    width: 1.5em;
+    float: right;
+    font-size: 3em;
+    color: #878787;
+    position: fixed;
+    bottom: 10px;
+    margin-left: 82px;
+    z-index: 99;
+    padding: 0;
+    text-align: center;
+}
+#btn-31{
+    width: 1.5em;
+    float:left;
+    font-size: 3em;
+    color: #878787;
+    position: fixed;
+    bottom: 10px;
+    margin-left: 10px;
+    z-index: 99;
+    padding: 0;
+    text-align: center;
+}
+#btn-4 {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    padding: 0;
+    text-align: center;
+}
+#btn-4 a{
+    font-family: DS-Digital, 'Titillium Web', sans-serif;
+    font-size: 3em;
+    color: #878787;
+}
+button{
+    font-family: DS-Digital, 'Titillium Web', sans-serif;
+    color: #FFA800;
+    background: black;
+    width: 8em;
+    border-radius: 10px;
+}
+
+
+
+/******************** PERSONAGENS ********************/
+#titulo img{
+    width: 40em;
+    margin: 20px 10px 0 10px;
+}
+#titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h1-p{
+    text-align: center;
+    font-family: DS-Digital, 'Titillium Web', sans-serif;
+    color: #FFA800;
+    font-size: 45px;
+    margin: 6vh 0 0 0;
+}
+
+body .bg-p{
+    background-image: url("../img/componentes/Fundo_Estrelado.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+#bd-personagens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bd-p{
+    margin: 5em;
+    width: 50.5em;
+    height: 80%;
+}
+  /* The grid: Four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    
+  }
+  /* Style the images inside the grid */
+  .column img {
+    opacity: 0.8; 
+    cursor: pointer;
+    border-radius: 50%;
+    background: radial-gradient(0, transparent 20%);
+  }
+  .column img:hover {
+    opacity: 1;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* The expanding image container */
+  .container {
+    position: relative;
+    display: none;
+  }
+  /* Expanding image text */
+  #imgNome {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #FFA800;
+    font-size: 30px;
+    font-family: DS-Digital, 'Titillium Web', sans-serif;
+  }
+  #imgText {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  #imgText p{
+    position: relative;
+    float: right;
+    width: 50%;
+  }
+  #expandedImg{
+    width: 50%;
+    float: left;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+  }
+
+  /* Closable button inside the expanded image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+/* Info personagens */
+
+
+.info-geral h1{
+    margin: 6px;
+	color: #FFA800;
+    font-size: 30px;
+    font-family: DS-Digital, 'Titillium Web', sans-serif;
+}
+.info-geral p{
+    color: #ecf0f1;
+    margin: 6px;
+}
+#info-1{
+    background-color: #ff59173c;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+#info-2{
+    background-color: #3d7b9843 
+}
+#info-3{
+    background-color: #00fe002c; 
+}
+#info-4{
+    background-color: #ffaa0030;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+
+/******************** CURIOSIDADES ********************/
+table{
+	width: 40vw;
+    margin: auto;
+    margin-top: 10vh;
+    }
+table, tr, th, td {
+	border-collapse: collapse;
+    padding: 2px;}
+thead th{
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;}
+tbody{color: #ecf0f1;
+    background-color: #413b3b7e;}
+tbody td{text-align: center;
+	border-bottom: 1px solid #ecf0f1;}
+th, td{padding: 10px;}
+th{width: 15%;
+	background: #6f0b0b;
+	color: white;
+	font-weight: bold;}
+td a {color: white;
+	border-radius: 25px;
+	padding: 8px;
+	display: inline-block;
+	width: 90%;
+	text-align: center;}
+th{font-family: DS-Digital;
+    font-size: 30px;
+    color: #FFA800;}
+
+/*  **** Sem tabela **** */
+
+
+.container-curiosidade{
+	display: flex;
+	flex-direction: row;
+}
+#img-curiosidades{
+	display: flex;
+	flex-direction: column;
+}
+#img-curiosidades img{
+    width: 40vw;
+    margin:0 0 5px 12vw;
+}
+#paragrafo{
+	display: flex;
+	flex-direction: column;
+}
+#paragrafo p{
+	justify-content: center;
+    align-items: center;
+}
+#paragrafo .p-curi{
+	width: 40vw;
+    margin:0 12vw 5px 0 ;
+    text-align: justify;
+  	text-justify: inter-word;
+}
+tbody tr td img{
+	width: 40vw;
+    margin:0 0 5px 12vw;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/******************** TIMELINE ********************/
+.timeline{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    color: whitesmoke;
+  }
+  #time-1955{
+    margin-right: 28vw;
+  }
+  #time-1985A{
+    margin-right: 5vw;
+  }
+/* #time-dot{
+    border-bottom: 1px whitesmoke;
+}
+#time-dot-2{
+    border-bottom: 1px whitesmoke;
+}*/
+
+.timeline h3{
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+
+} 
+.timeline .tooltip h3 a{
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    font-family: DS-Digital, 'Titillium Web', sans-serif;
+    color: #F9581E;
+} 
+.timeline span{
+    font-size: 16px;
+}
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(72, 68, 68, 0.42);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+ /******************** LINKS ENTREGAVEIS ********************/
+
+
+.h1-link{
+    text-align: center;
+    font-family: DS-Digital, 'Titillium Web', sans-serif;
+    color: #FFA800;
+    font-size: 50px;
+    margin:  0 0 6vh 0;
+    padding-top: 6vh;
+}
+
+.lista-link, a{
+    font-family: DS-Digital, 'Titillium Web', sans-serif;
+    font-size: 30px;
+    text-align: center;
+
+}
+.lista-link #link-1 a{
+    color: #E679DD;
+}
+.lista-link #link-2 a{
+    color: #96B8FF;
+}
+.lista-link #link-3 a{
+    color: #BCE16F;
+}
